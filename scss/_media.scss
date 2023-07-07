@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+   $widthSite: 768px;
+   $gapGrid: 16px;
+   $thirdSite: ($widthSite - $gapGrid * 2) / 3;
+   .center {
+      padding-left: calc(50% - $widthSite / 2);
+      padding-right: calc(50% - $widthSite / 2);
+   }
+   .top {
+      gap: 40px;
+      &__photo {
+         width: 385px;
+         margin-left: -10px;
+      }
+      &__title {
+         font-size: 44px;
+      }
+      &__text-title {
+         font-size: 24px;
+      }
+   }
+   .offer {
+      &__box {
+         gap: $gapGrid;
+      }
+      &__item {
+         width: $thirdSite;
+      }
+      &__item-big {
+         width: 100%;
+      }
+   }
+
+   .product__box {
+      gap: $gapGrid;
+   }
+
+   .feature__box {
+      flex-direction: column;
+   }
+
+   .frame {
+      flex-direction: column;
+      gap: 48px;
+      padding-bottom: 140px;
+      padding-top: 53px;
+   }
+}
+
+@media (max-width: 320px) {
+   $widthSite: 320px;
+   $thirdSite: ($widthSite - $gapGrid * 2) / 3;
+   .center {
+      padding-left: calc(50% - $widthSite / 2);
+      padding-right: calc(50% - $widthSite / 2);
+   }
+}
